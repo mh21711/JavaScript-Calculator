@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>JavaScript Calculator</title>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+      </head>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
